@@ -23003,8 +23003,10 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <wire x1="-119.38" y1="-43.18" x2="-119.38" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="ADC6"/>
-<wire x1="-111.76" y1="12.7" x2="-106.68" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="-111.76" y1="25.4" x2="-121.92" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="25.4" x2="-121.92" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="7.62" x2="-121.92" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CA1" class="0">
@@ -23014,8 +23016,10 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <wire x1="-121.92" y1="-40.64" x2="-121.92" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="ADC7"/>
-<wire x1="-111.76" y1="10.16" x2="-106.68" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="-15.24" x2="-124.46" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="-15.24" x2="-124.46" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
+<wire x1="-124.46" y1="27.94" x2="-111.76" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -23503,22 +23507,6 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <junction x="-215.9" y="53.34"/>
 </segment>
 </net>
-<net name="N$58" class="0">
-<segment>
-<pinref part="R50" gate="G$1" pin="1"/>
-<wire x1="-101.6" y1="25.4" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="-101.6" y1="25.4" x2="-111.76" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$59" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
-<wire x1="-111.76" y1="27.94" x2="-111.76" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R51" gate="G$1" pin="2"/>
-<wire x1="-109.22" y1="48.26" x2="-111.76" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$60" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC2(ADC2)"/>
@@ -23555,6 +23543,23 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="25.4" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$59" class="0">
+<segment>
+<pinref part="R51" gate="G$1" pin="2"/>
+<wire x1="-109.22" y1="48.26" x2="-127" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-127" y1="48.26" x2="-127" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="ADC6"/>
+<wire x1="-127" y1="12.7" x2="-111.76" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="ADC7"/>
+<wire x1="-111.76" y1="10.16" x2="-101.6" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R50" gate="G$1" pin="1"/>
+<wire x1="-101.6" y1="10.16" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
